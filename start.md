@@ -14,9 +14,11 @@ echo > app.ts
 ```
 import http from 'http'
 
-http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
   console.log(req);
-})  
+});
+
+server.listen(3000, "localhost);
 ```
 
 ### Build

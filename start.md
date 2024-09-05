@@ -10,7 +10,7 @@ npx tsc --init - generates tsconfig.json\
 tsconfig.json - change module to ESNEXT
 
 ### Server root
-echo > app.ts\
+echo > app.ts
 ```
 import http from 'http'
 

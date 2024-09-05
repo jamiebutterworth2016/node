@@ -9,6 +9,6 @@ echo > app.ts\
 ```import http from 'http'```
 
 ### Build
-npx tsc - generates js files (build)\
+npx tsc - generates js files (build)
 
 

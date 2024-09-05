@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
 server.listen(3000, "localhost);
 ```
 
-### Build
+### Build and run
 npx tsc - generates js files (build)
-
+node app.js
 

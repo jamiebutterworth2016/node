@@ -27,6 +27,16 @@ Add start script to package.json `npx tsc && nodemon app.js` - generates js file
 `npm i express --save`\
 `npm i @types/express --save-dev`
 
+app.ts
+```
+import http from "http";
+import express from "express";
+
+const app = express();
+const server = http.createServer(app);
+server.listen(3000);
+```
+
 ### Split app and routes into two separate files
 app.ts
 ```

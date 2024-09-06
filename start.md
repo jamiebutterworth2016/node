@@ -1,8 +1,6 @@
-### Create project
-mkdir project
-cd project
-
-### Node + TS
+### Create project with Node + TS
+mkdir project\
+cd project\
 npm init - generates package.json\
 package.json - add type module\
 npm i typescript @types/node --save-dev\

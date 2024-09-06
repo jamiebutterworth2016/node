@@ -7,7 +7,7 @@ Add type module to package.json\
 Set module to ESNext tsconfig.json 
 
 ### Server root
-echo > app.ts
+`echo > app.ts`
 ```
 import http from 'http'
 
@@ -19,8 +19,8 @@ server.listen(3000, "localhost);
 ```
 
 ### Build and run
-npx tsc - generates js files (build)\
-node app.js
+`npx tsc` - generates js files (build)\
+`node app.js`
 
 ### Split app and routes into two separate files
 app.ts

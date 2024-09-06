@@ -4,7 +4,7 @@ npm init - generates package.json\
 Add type module to package.json\
 npm i typescript @types/node --save-dev\
 npx tsc --init - generates tsconfig.json\
-Set module to ESNEXT tsconfig.json 
+Set module to ESNext tsconfig.json 
 
 ### Server root
 echo > app.ts

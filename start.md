@@ -22,7 +22,7 @@ server.listen(3000, "localhost);
 ```
 
 ### Build and run
-npx tsc - generates js files (build)
+npx tsc - generates js files (build)\
 node app.js
 
 ### Split app and routes into two separate files

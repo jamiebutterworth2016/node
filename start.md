@@ -1,5 +1,5 @@
 ### Create project with Node + TS
-`mkdir project && cd project`\
+`mkdir project && cd project && code .`\
 `npm init` - generates package.json\
 Add type module to package.json\
 `npm i typescript @types/node --save-dev`\

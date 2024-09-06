@@ -19,7 +19,7 @@ server.listen(3000, "localhost);
 ```
 
 ### Build and run
-`npm i nodemon --save-dev`
+`npm i nodemon --save-dev`\
 Add start script to package.json `npx tsc && node app.js` - generates js files (build) && runs app\
 `npm run start` 
 

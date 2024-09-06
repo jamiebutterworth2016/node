@@ -19,8 +19,8 @@ server.listen(3000, "localhost);
 ```
 
 ### Build and run
-`npx tsc` - generates js files (build)\
-`node app.js`
+Add start script to package.json `npx tsc && node app.js` - generates js files (build) && runs app\
+`npm run start` 
 
 ### Split app and routes into two separate files
 app.ts

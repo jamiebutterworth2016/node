@@ -25,6 +25,7 @@ Add start script to package.json `npx tsc && nodemon app.js` - generates js file
 
 ### Install Express.js
 `npm i express --save`
+`npm i @types/express --save-dev`
 
 ### Split app and routes into two separate files
 app.ts

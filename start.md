@@ -6,7 +6,7 @@ Add type module to package.json\
 `npx tsc --init` - generates tsconfig.json\
 Set module to ESNext tsconfig.json 
 
-### Server root
+### Server root - vanilla Node
 `echo > app.ts`
 ```
 import http from 'http'
@@ -22,6 +22,9 @@ server.listen(3000, "localhost);
 `npm i nodemon --save-dev`\
 Add start script to package.json `npx tsc && nodemon app.js` - generates js files (build) && runs app\
 `npm run start` 
+
+### Install Express.js
+`npm i express --save`
 
 ### Split app and routes into two separate files
 app.ts

@@ -9,6 +9,7 @@ Requires 4 files: app.ts, package.json, tsconfig.json, nodemon.json.
 ### Getting started with Express.js
 `npm i express --save`\
 `npm i @types/express nodemon ts-node --save-dev`
+In package.json, set start script to `nodemon`
 
 app.ts
 ```

@@ -23,9 +23,11 @@ server.listen(3000, "localhost");
 Add start script to package.json `npx tsc && nodemon app.js` - generates js files (build) && runs app\
 `npm run start` 
 
-### Use Express.js
+### Getting started with Express.js
 `npm i express --save`\
 `npm i @types/express --save-dev`
+
+Requires 4 files: app.ts, package.json, tsconfig.json, nodemon.json
 
 app.ts
 ```

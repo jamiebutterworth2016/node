@@ -1,1 +1,69 @@
+# Getting started with Express
+Requires 4 files: app.ts, package.json, tsconfig.json, nodemon.json
 
+`mkdir project && cd project && code -r .`\
+`npm init` - generates package.json\
+Add type module to package.json\
+`npm i typescript @types/node --save-dev`\
+`npx tsc --init` - generates tsconfig.json\
+
+### Getting started with Express.js
+`npm i express --save`\
+`npm i @types/express --save-dev`
+
+app.ts
+```
+import http from "http";
+import express from "express";
+
+const app = express();
+const server = http.createServer(app);
+server.listen(3000);
+```
+
+package.json
+```
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.4",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+```
+
+tsconfig.json
+```
+{
+  "compilerOptions": {
+    "target": "ES2016",                                 
+    "module": "CommonJS",
+    "esModuleInterop": true,                             
+  },
+  "exclude": ["node_modules"]
+}
+```
+
+nodemon.json
+```
+{
+    "watch": ["."],
+    "ext": "ts",
+    "exec": "ts-node ./app.ts"
+}
+```

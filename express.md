@@ -8,16 +8,6 @@ Requires 4 files: app.ts, package.json, tsconfig.json, nodemon.json.
 `npx tsc --init` - generates tsconfig.json\
 package.json - set start script to `nodemon`
 
-app.ts
-```
-import http from "http";
-import express from "express";
-
-const app = express();
-const server = http.createServer(app);
-server.listen(3000);
-```
-
 package.json
 ```
 {
@@ -63,4 +53,15 @@ nodemon.json
     "ext": "ts",
     "exec": "ts-node ./app.ts"
 }
+```
+
+app.ts
+```
+import http from "http";
+import express from "express";
+
+const app = express();
+const server = http.createServer(app);
+server.listen(3000);
+```
 ```

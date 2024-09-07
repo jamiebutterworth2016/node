@@ -3,11 +3,10 @@ Requires 4 files: app.ts, package.json, tsconfig.json, nodemon.json.
 
 `mkdir project && cd project && code -r .`\
 `npm init` - generates package.json\
-`npm i typescript @types/node --save-dev`\
-`npx tsc --init` - generates tsconfig.json\
+`npm i typescript @types/node @types/express nodemon ts-node --save-dev`\
 `npm i express --save`\
-`npm i @types/express nodemon ts-node --save-dev`\
 package.json - set start script to `nodemon`
+`npx tsc --init` - generates tsconfig.json
 
 app.ts
 ```

@@ -57,10 +57,19 @@ nodemon.json
 
 app.ts
 ```
-import http from "http";
 import express from "express";
 
 const app = express();
-const server = http.createServer(app);
-server.listen(3000);
+
+app.use((req, res, next) => {
+  console.log("middleware");
+  next();
+});
+
+app.use((req, res, next) => {
+  console.log("middleware 2");
+  res.send("<h1>Hello from express!</h1>");
+});
+
+app.listen(3000);
 ```

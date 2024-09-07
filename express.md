@@ -49,8 +49,6 @@ tsconfig.json
 nodemon.json
 ```
 {
-    "watch": ["."],
-    "ext": "ts",
     "exec": "ts-node ./app.ts"
 }
 ```

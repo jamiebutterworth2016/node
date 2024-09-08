@@ -49,7 +49,8 @@ tsconfig.json
 nodemon.json
 ```
 {
-    "exec": "ts-node ./app.ts"
+  "watch": ["./**/*.ts"],
+  "exec": "ts-node ./app.ts",
 }
 ```
 

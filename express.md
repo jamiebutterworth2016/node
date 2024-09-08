@@ -15,7 +15,7 @@ package.json
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon app.ts"
+    "start": "npx nodemon"
   },
   "author": "",
   "license": "ISC",

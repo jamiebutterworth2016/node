@@ -40,8 +40,7 @@ tsconfig.json
     "target": "ES2016",                                 
     "module": "CommonJS",
     "esModuleInterop": true,                             
-  },
-  "exclude": ["node_modules"]
+  }
 }
 ```
 

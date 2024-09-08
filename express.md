@@ -50,7 +50,7 @@ nodemon.json
 ```
 {
   "watch": ["./**/*.ts"],
-  "exec": "ts-node ./app.ts",
+  "exec": "ts-node ./app.ts"
 }
 ```
 

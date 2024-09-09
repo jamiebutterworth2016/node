@@ -3,8 +3,8 @@ Requires 4 files: app.ts, package.json, tsconfig.json, nodemon.json.
 
 `mkdir project && cd project && code -r .`\
 `npm init` - generates package.json\
-`npm i typescript @types/node @types/express nodemon ts-node --save-dev`\
 `npm i express --save`\
+`npm i typescript @types/node @types/express nodemon ts-node --save-dev`\
 `npx tsc --init` - generates tsconfig.json
 
 package.json
@@ -15,7 +15,7 @@ package.json
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon"
+    "start": "nodemon"
   },
   "author": "",
   "license": "ISC",

@@ -18,4 +18,5 @@ app.listen(3000);
 ```
 
 # Styles
-`mkdir public/css/main.css`
+`mkdir public/css`\
+`echo > public/css/main.css`

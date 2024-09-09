@@ -1,3 +1,4 @@
+# Views
 `mkdir views`\
 `echo > views/view.html`\
 `html5`
@@ -15,3 +16,6 @@ app.get("/", (req, res) => {
 
 app.listen(3000);
 ```
+
+# Styles
+`mkdir public/css/main.css`

@@ -1,2 +1,3 @@
-`mkdir views`
-`echo > views/view.html`
+`mkdir views`\
+`echo > views/view.html`\
+`html5`

@@ -20,3 +20,10 @@ app.listen(3000);
 # Styles
 `mkdir public/css`\
 `echo > public/css/main.css`
+
+main.css
+```
+body {
+  font-family: sans-serif;
+}
+```

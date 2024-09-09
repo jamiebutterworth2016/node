@@ -27,3 +27,7 @@ body {
   font-family: sans-serif;
 }
 ```
+Add link to views
+```
+<link rel="stylesheet" href="">
+```

@@ -21,6 +21,11 @@ app.listen(3000);
 `mkdir public/css`\
 `echo > public/css/main.css`
 
+app.ts
+```
+app.use(express.static(path.join(__dirname, 'public')));
+```
+
 main.css
 ```
 body {
@@ -29,5 +34,5 @@ body {
 ```
 Add link to views
 ```
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="/css/main.css">
 ```

@@ -12,8 +12,8 @@ app.ts
 ```
 import engine from "express-handlebars";
 
-app.engine("handlebars", engine({}));
-app.set("view engine", "handlebars");
+app.engine("hbs", engine({}));
+app.set("view engine", "hbs");
 ```
 
-`echo > views/404.handlebars`
+`echo > views/404.hbs`

@@ -15,3 +15,5 @@ import engine from "express-handlebars";
 app.engine("handlebars", engine({}));
 app.set("view engine", "handlebars");
 ```
+
+`echo > views/404.handlebars`

@@ -36,3 +36,6 @@ Add link to views
 ```
 <link rel="stylesheet" href="/css/main.css">
 ```
+
+# Routes
+`mkdir routes`

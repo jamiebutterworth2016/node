@@ -27,32 +27,20 @@ app.set("view engine", "hbs");
 `echo > views/layouts/main-layout.hbs`
 
 # EJS (Embedded JavaScript templates)
-Can mix JS with HTML.
+Can mix JS with HTML.  
+app.ts
 ```
 app.set("view engine", "ejs");
 app.set("views", "views");
 ```
+
+views/shop.ejs
 ```
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/css/main.css" />
-  </head>
+  <%- include('includes/head.ejs') %>
   <body>
-    <header class="main-header">
-      <nav class="main-header__nav">
-        <ul class="main-header__item-list">
-          <li class="main-header__item"><a class="active" href="/">Shop</a></li>
-          <li class="main-header__item">
-            <a href="/admin/add-product">Add Product</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+    <%- include('includes/navigation.ejs') %>
     <main>
       <% if (prods.length > 0) { %>
       <div class="grid">
@@ -78,5 +66,4 @@ app.set("views", "views");
     </main>
   </body>
 </html>
-
 ```

@@ -53,7 +53,7 @@ app.use((req, res, next) => {
 app.listen(3000);
 ```
 
-views/includes/navigation.ejs
+views/includes/head.ejs
 ```
 <head>
   <meta charset="UTF-8" />
@@ -61,6 +61,26 @@ views/includes/navigation.ejs
   <title><%= title %></title>
   <link rel="stylesheet" href="/css/main.css" />
 </head>
+```
+
+views/includes/navigation.ejs
+```
+<header class="main-header">
+  <nav class="main-header__nav">
+    <ul class="main-header__item-list">
+      <li class="main-header__item">
+        <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+      </li>
+      <li class="main-header__item">
+        <a
+          class="<%= path === '/admin/add-product' ? 'active' : '' %>"
+          href="/admin/add-product"
+          >Add Product</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
 ```
 
 views/shop.ejs

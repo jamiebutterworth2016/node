@@ -52,6 +52,7 @@ app.use((req, res, next) => {
 app.listen(3000);
 ```
 
+## Routes
 routes/shop.ts
 ```
 import express from "express";
@@ -72,6 +73,7 @@ router.get("/", (req, res, next) => {
 export default router;
 ```
 
+## Views
 views/includes/head.ejs
 ```
 <head>

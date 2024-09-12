@@ -53,6 +53,8 @@ export { getAddProduct, addNewProduct, getProducts };
 # Models
 `mkdir models`  
 `echo > models/product.ts`
+
+models/product.ts
 ```
 import { promises as fs } from "fs";
 import path from "path";

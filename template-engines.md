@@ -27,6 +27,7 @@ app.set("view engine", "hbs");
 `echo > views/layouts/main-layout.hbs`
 
 # EJS (Embedded JavaScript templates)
+Can mix JS with HTML.
 ```
 app.set("view engine", "ejs");
 app.set("views", "views");

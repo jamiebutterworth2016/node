@@ -16,4 +16,5 @@ app.engine("hbs", engine({ layoutsDir: "views", defaultLayout: 'main-layout' }))
 app.set("view engine", "hbs");
 ```
 
-`echo > views/404.hbs`
+`echo > views/404.hbs`  
+`echo > views/layouts/main-layout.png`

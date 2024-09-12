@@ -51,5 +51,5 @@ export { getAddProduct, addNewProduct, getProducts };
 ```
 
 # Models
-`mkdir models`
+`mkdir models`  
 `echo > models/product.ts`

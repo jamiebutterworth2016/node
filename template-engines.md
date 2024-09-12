@@ -25,3 +25,5 @@ app.set("view engine", "hbs");
 
 `echo > views/404.hbs`  
 `echo > views/layouts/main-layout.hbs`
+
+# EJS

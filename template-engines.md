@@ -30,8 +30,27 @@ app.set("view engine", "hbs");
 Can mix JS with HTML.  
 app.ts
 ```
+import express from "express";
+import path from "path";
+import { adminRouter } from "./routes/admin";
+import shopRoutes from "./routes/shop";
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
+
 app.set("view engine", "ejs");
 app.set("views", "views");
+
+app.use("/admin", adminRouter);
+app.use(shopRoutes);
+
+app.use((req, res, next) => {
+  res.render("404", { title: "Page not found", path: "/404" });
+});
+
+app.listen(3000);
 ```
 
 views/includes/navigation.ejs

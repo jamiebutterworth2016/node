@@ -52,6 +52,26 @@ app.use((req, res, next) => {
 app.listen(3000);
 ```
 
+routes/shop.ts
+```
+import express from "express";
+import { products } from "./admin";
+
+const router = express.Router();
+
+router.get("/", (req, res, next) => {
+  res.render("shop", {
+    title: "Shop",
+    prods: products,
+    hasProducts: products.length > 0,
+    path: "/",
+    activeShop: true,
+  });
+});
+
+export default router;
+```
+
 views/includes/head.ejs
 ```
 <head>

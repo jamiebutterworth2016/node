@@ -26,7 +26,7 @@ app.set("view engine", "hbs");
 `echo > views/404.hbs`  
 `echo > views/layouts/main-layout.hbs`
 
-# EJS
+# EJS (Embedded JavaScript templates)
 ```
 app.set("view engine", "ejs");
 app.set("views", "views");

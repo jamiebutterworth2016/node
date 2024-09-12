@@ -12,7 +12,7 @@ app.ts
 ```
 import engine from "express-handlebars";
 
-app.engine("hbs", engine({}));
+app.engine("hbs", engine({ layoutsDir: "views", defaultLayout: 'main-layout' }));
 app.set("view engine", "hbs");
 ```
 

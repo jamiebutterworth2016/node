@@ -51,4 +51,4 @@ export { getAddProduct, addNewProduct, getProducts };
 ```
 
 # Models
-
+`mkdir models`

@@ -49,3 +49,6 @@ const getProducts = (req: Request, res: Response) => {
 
 export { getAddProduct, addNewProduct, getProducts };
 ```
+
+# Models
+

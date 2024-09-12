@@ -27,3 +27,7 @@ app.set("view engine", "hbs");
 `echo > views/layouts/main-layout.hbs`
 
 # EJS
+```
+app.set("view engine", "ejs");
+app.set("views", "views");
+```

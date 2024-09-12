@@ -53,3 +53,35 @@ export { getAddProduct, addNewProduct, getProducts };
 # Models
 `mkdir models`  
 `echo > models/product.ts`
+```
+import { promises as fs } from "fs";
+import path from "path";
+
+const p = path.join(__dirname, "..", "data", "products.json");
+
+class Product {
+  title: string;
+
+  constructor(title: string) {
+    this.title = title;
+  }
+
+  async save(): Promise<void> {
+    const file = await fs.readFile(p);
+
+    let products: Product[] = [];
+
+    products = JSON.parse(file.toString());
+    products.push(this);
+
+    await fs.writeFile(p, JSON.stringify(products));
+  }
+
+  static async fetchAll(): Promise<Product[]> {
+    const file = await fs.readFile(p);
+    return JSON.parse(file.toString());
+  }
+}
+
+export { Product };
+```

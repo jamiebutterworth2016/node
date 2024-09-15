@@ -1,3 +1,6 @@
+# MySQL Database
+Moving away from fs and path.  
+
 `npm i --save mysql2`  
 `mkdir util`  
 `echo > util/database.ts`  

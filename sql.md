@@ -13,5 +13,5 @@ const pool = mysql.createPool({
   password: "pass",
 });
 
-export default pool;
+export default pool.promise();
 ```

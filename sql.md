@@ -1,5 +1,5 @@
 # MySQL Database
-Moving away from fs and path.  
+Moving away from fs and path. Executing queries - Way fewer lines of code than reading from file.
 
 `npm i --save mysql2`  
 `mkdir util`  

@@ -15,3 +15,30 @@ const pool = mysql.createPool({
 
 export default pool.promise();
 ```
+
+app.ts
+```
+import express from "express";
+import path from "path";
+import adminRoutes from "./routes/admin";
+import shopRoutes from "./routes/shop";
+import pageNotFound from "./controllers/error";
+import database from "./util/database";
+
+const app = express();
+
+database.execute("SELECT * FROM products");
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
+
+app.set("view engine", "ejs");
+
+app.use("/admin", adminRoutes);
+app.use(shopRoutes);
+
+app.use(pageNotFound);
+
+app.listen(3000);
+```

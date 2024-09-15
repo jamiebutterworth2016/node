@@ -27,7 +27,14 @@ import database from "./util/database";
 
 const app = express();
 
-database.execute("SELECT * FROM products");
+database
+  .execute("SELECT * FROM products")
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

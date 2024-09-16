@@ -3,5 +3,8 @@
 
 util/database.ts
 ```
+import { Sequelize } from "sequelize";
+
+const sequelize = new Sequelize("node-complete", "root", "pass");
 
 ```

@@ -4,7 +4,12 @@
 util/database.ts
 ```
 import { Sequelize } from "sequelize";
-const sequelize = new Sequelize("node-complete", "root", "pass");
+
+const sequelize = new Sequelize("node-complete", "root", "pass", {
+  dialect: "mysql",
+});
+
+export default sequelize;
 ```
 
 models/product.ts

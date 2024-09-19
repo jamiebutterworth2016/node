@@ -18,5 +18,5 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo docker version
-sudo docker run centos
+sudo docker run -it centos bash
 ```

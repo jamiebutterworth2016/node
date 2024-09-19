@@ -9,3 +9,12 @@
 `docker rm [container]`  
 `docker exec [container] cat /etc/hosts` -> execute command on running container
 `docker attach [container_id]` -> attach running container to console  
+
+
+# Get started
+Ubuntu
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```

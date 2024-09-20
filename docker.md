@@ -40,3 +40,12 @@ To make task public, map container IP to host IP.
 Container has temp internal fs.  
 To persist data, map internal fs to host fs.  
 `docker run -v [container_dir]:[host_dir] [image]`, e.g. `/opt/datadir:/var/lib/my/sql`  
+
+# Dockerfile
+```
+FROM Ubuntu
+RUN apt-get update && apt-get -y install python
+RUN pip install flash flash-mysql
+COPY . /opt/source-code
+ENTRYPOINT FLASK_APP=/opt/source-code/app.py flash run
+```

@@ -1,8 +1,13 @@
-`docker images` -> ls images  
-`docker rmi [image]` -> rm image  
-`docker pull [image]` -> dl image  
-`docker run [image]` -> dl and run image in container, attached to console. Container runs a task (NOT an OS) and exits.  
-`docker run -d [image]` dl and run image in container, detached from console
+Image tags can be specified with `[image]:[tag]`.
+`docker run` dl image first, then run in container.  
+Container runs a task (NOT an OS) and exits.
+
+`docker images`  
+`docker rmi [image]`  
+`docker pull [image]` -> dl image without running  
+`docker run [image]` -> attach to console  
+`docker run -d [image]` -> run in background, detached from console  
+`docker run -it [image]` -> run in interactive terminal mode, allows for input (stdin)  
 
 `docker ps -a` -> ls containers  
 `docker stop [container]`  

@@ -14,7 +14,8 @@ Container runs a task (NOT an OS) and exits.
 `docker rm [container]`  
 `docker exec [container] cat /etc/hosts` -> execute command on running container
 `docker attach [container_id]` -> attach running container to console  
-
+`docker inspect [container]`  
+`docker logs [container]`  
 
 # Get started
 Ubuntu
@@ -26,3 +27,16 @@ sh get-docker.sh
 docker version
 docker run -it centos bash
 ```
+
+# Port mapping for web servers
+Docker host runs containers.  
+Container auto assigned IP.  
+Task like web server can run on port, e.g. 5000.  
+Internal IP is http://[container_ip]:[port].  
+To make task public, map container IP to host IP.  
+`docker run -p [host_port]:[task_port] [image]` e.g. `80:5000`  
+
+# Volume mapping for databases / fs
+Container has temp internal fs.  
+To persist data, map internal fs to host fs.  
+`docker run -v [container_dir]:[host_dir] [image]`, e.g. `/opt/datadir:/var/lib/my/sql`  

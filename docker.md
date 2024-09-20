@@ -54,3 +54,4 @@ ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0
 `docker build . -t [organisation_name]/[image_name]`  
 `docker images`  
 `docker run [image_name]`  
+`docker push [organisation_name]/[image-name]`  -> push to repo  

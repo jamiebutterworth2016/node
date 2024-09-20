@@ -44,8 +44,9 @@ To persist data, map internal fs to host fs.
 # Dockerfile
 ```
 FROM Ubuntu
-RUN apt-get update && apt-get -y install python
-RUN pip install flash flash-mysql
-COPY . /opt/source-code
-ENTRYPOINT FLASK_APP=/opt/source-code/app.py flash run
+RUN apt-get update
+RUN apt-get install -y python python-pip
+RUN pip install flask
+COPY app.py /opt/app.py
+ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0
 ```

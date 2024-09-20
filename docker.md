@@ -12,7 +12,7 @@ Container runs a task (NOT an OS) and exits.
 `docker ps -a` -> ls containers  
 `docker stop [container]`  
 `docker rm [container]`  
-`docker exec [container] cat /etc/hosts` -> execute command on running container
+`docker exec [container] cat /etc/hosts` -> execute command on running container  
 `docker attach [container_id]` -> attach running container to console  
 `docker inspect [container]`  
 `docker logs [container]`  

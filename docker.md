@@ -51,6 +51,6 @@ COPY app.py /opt/app.py
 ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0
 ```
 
-`docker build . -t my-simple-web-app`  
+`docker build . -t [organisation_name]/[image_name]`  
 `docker images`  
-`docker run my-simple-web-app`  
+`docker run [image_name]`  

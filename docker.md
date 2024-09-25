@@ -123,3 +123,6 @@ Deploy private registry
 `docker image tag [image] [registry-host]:[port]/[image]`  
 `docker push [registry-host]:[port]/[image]`  
 `docker pull [registry-host]:[port]/[image]`  
+
+Remove images not used by containers  
+`docker image prune -a`  

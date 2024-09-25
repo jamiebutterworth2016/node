@@ -76,6 +76,7 @@ CMD sleep 5
 ```
 `docker run ubuntu-sleeper sleep 10`
 ```
-FROM Ubuntu ENTRYPOINT ["sleep"]
+FROM Ubuntu
+ENTRYPOINT ["sleep"]
 ```
 `docker run ubuntu-sleeper 10`

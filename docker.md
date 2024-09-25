@@ -111,5 +111,4 @@ services:
       - 5001:80
 ```
 
-`docker run --name redis -d redis:alpine`  
-`docker run --name clickcounter -p 8085:5000 -d --link redis kodekloud/click-counter`
+`docker-compose-up`

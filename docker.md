@@ -70,13 +70,13 @@ Go `color := os.Getenv("APP_COLOR")`
 Java `String color = System.getenv("APP_COLOR");`  
 
 # CMD vs ENTRYPOINT
+`docker run ubuntu-sleeper sleep 10`
 ```
 FROM Ubuntu
 CMD sleep 5
 ```
-`docker run ubuntu-sleeper sleep 10`
+`docker run ubuntu-sleeper 10`
 ```
 FROM Ubuntu
 ENTRYPOINT ["sleep"]
 ```
-`docker run ubuntu-sleeper 10`

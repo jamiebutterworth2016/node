@@ -59,11 +59,10 @@ ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0
 `docker push [organisation]/[image]`  -> push to repo  
 
 # Environment Variables
+`docker run -e APP_COLOR=blue`  
 Python `color = os.environ.get('APP_COLOR')`  
 Node `const color = process.env.APP_COLOR;`  
 Ruby `color = ENV['APP_COLOR']`  
 PHP `$color = getenv('APP_COLOR');`  
 Go `color := os.Getenv("APP_COLOR")`  
 Java `String color = System.getenv("APP_COLOR");`  
-
-`docker run -e APP_COLOR=blue`  

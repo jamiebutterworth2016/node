@@ -112,3 +112,5 @@ services:
 ```
 
 `docker-compose-up`
+
+# Docker Registry

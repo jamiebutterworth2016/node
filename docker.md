@@ -79,4 +79,5 @@ CMD sleep 5
 ```
 FROM Ubuntu
 ENTRYPOINT ["sleep"]
+CMD ["5"] //defaults to 5 if missing
 ```

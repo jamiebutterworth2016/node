@@ -93,6 +93,9 @@ services:
   
   db:
     image: postgres:9.4
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
   
   vote:
     image: voting-app

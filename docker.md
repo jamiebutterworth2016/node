@@ -83,31 +83,27 @@ CMD ["5"] //defaults to 5 if missing
 ```
 
 # Docker Compose
+Version 3 deployment autocreates a network for these containers.
 `cat > docker-compose.yml`
 ```
-redis:
-  image: redis
-
-db:
-  image: postgres:9.4
-
-vote:
-  image: voting-app
-  ports:
-    - 5000:80
-  links:
-    - redis
-
-worker:
-  image: worker-app
-  links:
-    - db
-    - redis
-
-result:
-  image: result-app
-  ports:
-    - 5001:80
-  links:
-    - db 
+version: "3"
+services:
+  redis:
+    image: redis
+  
+  db:
+    image: postgres:9.4
+  
+  vote:
+    image: voting-app
+    ports:
+      - 5000:80
+  
+  worker:
+    image: worker-app
+  
+  result:
+    image: result-app
+    ports:
+      - 5001:80
 ```

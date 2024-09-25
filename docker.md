@@ -64,4 +64,6 @@ Node `const color = process.env.APP_COLOR;`
 Ruby `color = ENV['APP_COLOR']`  
 PHP `$color = getenv('APP_COLOR');`  
 Go `color := os.Getenv("APP_COLOR")`  
-Java `String color = System.getenv("APP_COLOR");`
+Java `String color = System.getenv("APP_COLOR");`  
+
+`docker run -e APP_COLOR=blue`  

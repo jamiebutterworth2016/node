@@ -83,3 +83,31 @@ CMD ["5"] //defaults to 5 if missing
 ```
 
 # Docker Compose
+`cat > docker-compose.yml`
+```
+redis:
+  image: redis
+
+db:
+  image: postgres:9.4
+
+vote:
+  image: voting-app
+  ports:
+    - 5000:80
+  links:
+    - redis
+
+worker:
+  image: worker-app
+  links:
+    - db
+    - redis
+
+result:
+  image: result-app
+  ports:
+    - 5001:80
+  links:
+    - db
+```

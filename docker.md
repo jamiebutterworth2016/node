@@ -114,10 +114,10 @@ services:
 `docker-compose-up`
 
 # Docker Registry
-Cloud login
+Cloud login  
 `docker login private-registry.io`  
 `docker run private-registry.io/apps/internal-app`  
 
-Deploy private registry
+Deploy private registry  
 `docker run -d -p 5000:5000 00name registry registry:2`  
 `docker image tag my-image locahost:5000/my-image`  

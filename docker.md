@@ -121,4 +121,5 @@ Cloud login
 Deploy private registry  
 `docker run -d -p 5000:5000 --name registry registry:2`  
 `docker image tag [image] [registry-host]:[port]/[image]`  
-`docker push [registry-host]:[port]/[image]`
+`docker push [registry-host]:[port]/[image]`  
+`docker pull [registry-host]:[port]/[image]`  

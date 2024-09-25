@@ -83,7 +83,7 @@ CMD ["5"] //defaults to 5 if missing
 ```
 
 # Docker Compose
-Version 3 deployment autocreates a network for these containers.
+Version 3 deployment autocreates a network for these containers.  
 `cat > docker-compose.yml`
 ```
 version: "3"

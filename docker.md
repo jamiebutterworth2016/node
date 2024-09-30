@@ -158,7 +158,5 @@ Bridge is the default private network a container is attached to.
 Override default with `docker run ubuntu --network=host`  
 
 **Create own network**
-```
-docker network create --driver bridge --subnet 182.18.0.0/16 custom-isolated-network
-```
+`docker network create --driver bridge --subnet 182.18.0.0/16 custom-isolated-network`  
 `docker network ls`

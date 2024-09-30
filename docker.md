@@ -144,7 +144,7 @@ Docker stores data under:
 -- /volumes
 ```
 
-## Volume mounting
+**Volume mounting**
 `docker volume create data_volume`  
 Creates `data_volume` file under `/var/lib/docker/volumes/`  
 

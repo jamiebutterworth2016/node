@@ -126,3 +126,14 @@ Deploy private registry
 
 Remove images not used by containers  
 `docker image prune -a`  
+
+# Docker Engine
+Consists of Docker CLI -> REST API -> Docker Daemon.  
+
+**Containerization**
+Namespace -> Network, Process ID, Unix Timesharing, Mount, InterProcess  
+
+**Namespace - PID**
+The host (Linux system) runs the PID which is mapped across to a container PID.
+
+# Docker Storage

@@ -135,3 +135,12 @@ Namespace -> Network, Process ID, Unix Timesharing, Mount, InterProcess
 The host (Linux system) runs the PID which is mapped across to a container PID.
 
 # Docker Storage
+Installing Docker on a local system creates a file system.  
+Docker stores data under:  
+```
+/var/lib/docker
+-- /aufs
+-- /containers
+-- /image
+-- /volumes
+```

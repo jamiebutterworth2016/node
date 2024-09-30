@@ -161,3 +161,4 @@ Override default with `docker run ubuntu --network=host`
 `docker network create --driver bridge --subnet 182.18.0.0/16 custom-isolated-network`  
 `docker network ls`  
 `docker inspect [container]` -> NetworkSettings/Networks  
+Containers can resolve each other with DNS using their container names.  

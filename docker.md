@@ -152,3 +152,7 @@ Creates `data_volume` file under `/var/lib/docker/volumes/`
 `docker run -v data_volume:/var/lib/mysql mysql`  OR  
 `docker run -v /data/mysql:/var/lib/mysql mysql`  OR  
 Maps the host volume to the container local folder.  
+
+# Docker Networking
+Bridge is the default private network a container is attached to.  
+Override default with `docker run ubuntu --network=host`  

@@ -150,6 +150,6 @@ Docker stores data under:
 Creates `data_volume` file under `/var/lib/docker/volumes/`  
 
 `docker run -v data_volume:/var/lib/mysql mysql`  OR  
-`docker run -v /data/mysql:/var/lib/mysql mysql`  OR
+`docker run -v /data/mysql:/var/lib/mysql mysql`  OR  
 `docker run \ --mount type=bind,source=/data/mysql,target=/var/lib/mysql mysql`  
 Maps the host volume to the container local folder.  

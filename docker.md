@@ -129,11 +129,9 @@ Remove images not used by containers
 
 # Docker Engine
 Consists of Docker CLI -> REST API -> Docker Daemon.  
-
-**Containerization**
+**Containerization**  
 Namespace -> Network, Process ID, Unix Timesharing, Mount, InterProcess  
-
-**Namespace - PID**
+**Namespace - PID**  
 The host (Linux system) runs the PID which is mapped across to a container PID.
 
 # Docker Storage

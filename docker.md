@@ -58,7 +58,7 @@ ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0
 `docker push [organisation]/[image]`  -> push to repo  
 
 # Environment variables
-`docker run -e APP_COLOR=blue`  
+`docker run -e APP_COLOR=blue -e ENV_VAR=foo`  
 `docker inspect [container]` -> Config -> Env  
 
 Python `color = os.environ.get('APP_COLOR')`  

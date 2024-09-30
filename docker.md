@@ -7,7 +7,7 @@ Container runs a task (NOT an OS) and exits.
 `docker images`  
 `docker rmi [image]`  
 `docker pull [image]` -> dl image without running  
-`docker run [image]` -> attach to console  
+`docker run --name [name] [image]` -> attach to console  
 `docker run -d [image]` -> run in background, detached from console  
 `docker run -it [image]` -> run in interactive terminal mode, allows for input (stdin)  
 
